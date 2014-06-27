@@ -50,6 +50,7 @@ ifeq ($(INSTALL_TARGET),piratebox)
 #This has to be aligned with current piratebox version :(
 ADDITIONAL_PACKAGE_IMAGE_URL:="http://stable.openwrt.piratebox.de/piratebox_images/piratebox_ws_1.0_img.tar.gz"
 ADDITIONAL_PACKAGE_FILE:=piratebox_ws_1.0_img.tar.gz
+GENERAL_PACKAGES:=$(GENERAL_PACKAGES) piratebox-mesh 
 TARGET_PACKAGE=extendRoot-$(INSTALL_TARGET) piratebox-mod-imageboard extendRoot-minidlna
 INSTALL_PREFIX:=$(FOLDER_PREFIX)$(INSTALL_TARGET)
 KAREHA_RELEASE:=kareha_3.1.4.zip
